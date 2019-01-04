@@ -2,8 +2,8 @@ class Abstract_strategy:
 
 	NAME = ''
 
-	def __init__(self, quandl, ticker, days):
-		self.quandl = quandl
+	def __init__(self, data, ticker, days):
+		self.data = data
 		self.ticker = ticker
 		self.days = days
 
