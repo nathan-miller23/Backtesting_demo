@@ -17,6 +17,7 @@ class Exponential_moving_average(Abstract_strategy):
 		multiplier = 2 / (self.days + 1)
 
 		# Recursively calculate the EMA (curr_day - 1) days ago 
+		# TODO: change to iterative for slight speed boost 
 		def helper(curr_day):
 			if curr_day == self.days:
 				# Use the current price as a base case
