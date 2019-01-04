@@ -7,7 +7,7 @@ quandl.ApiConfig.api_key = "EDyLzB9sdbNDQyXm_NhG"
 data = quandl.get_table('ZACKS/P', ticker='MSFT', paginate=True)
 
 ticker = sys.argv[1]
-days = sys.argv[2]
+days = int(sys.argv[2])
 
 strategies = [Simple_moving_average]
 

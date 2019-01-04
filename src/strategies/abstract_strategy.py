@@ -8,7 +8,9 @@ class Abstract_strategy:
 		self.days = days
 
 	def apply():
+		# 'Abstract' method to be implemented by child classes
 		self.val = 0.0
 
 	def to_string(self):
-		print('The ' + self.days + ' day ' + self.NAME + ' for ' + self.ticker + ' is ' + str(self.val) + '\n')
+		# Print calculated value in standard formatted manner
+		print('The ' + str(self.days) + ' day ' + self.NAME + ' for ' + self.ticker + ' is ' + str(self.val) + '\n')
