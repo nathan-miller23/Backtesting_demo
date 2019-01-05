@@ -13,4 +13,4 @@ class Abstract_strategy:
 
 	def to_string(self):
 		# Print calculated value in standard formatted manner
-		print('The ' + str(self.days) + ' day ' + self.NAME + ' for ' + self.ticker + ' is ' + str(self.val) + '\n')
+		print('The ' + str(self.days) + ' day ' + self.NAME + ' for ' + self.ticker + ' is ' + str(round(self.val, 3)) + '\n')
