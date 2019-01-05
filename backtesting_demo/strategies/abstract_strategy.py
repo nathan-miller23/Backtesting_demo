@@ -11,6 +11,6 @@ class Abstract_strategy:
 		# 'Abstract' method to be implemented by child classes
 		self.val = 0.0
 
-	def to_string(self):
+	def __str__(self):
 		# Print calculated value in standard formatted manner
-		print('The ' + str(self.days) + ' day ' + self.NAME + ' for ' + self.ticker + ' is ' + str(round(self.val, 3)) + '\n')
+		return 'The ' + str(self.days) + ' day ' + self.NAME + ' for ' + self.ticker + ' is ' + str(round(self.val, 3)) + '\n'

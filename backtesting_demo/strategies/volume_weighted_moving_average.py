@@ -33,5 +33,5 @@ class Volume_weighted_moving_average(Abstract_strategy):
 		self.val = sum(self.data['weighted price']) / total_volume
 
 		# Print with formatting
-		self.to_string()
+		print(self)
 

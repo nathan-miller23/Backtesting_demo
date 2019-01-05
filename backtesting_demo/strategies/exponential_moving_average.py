@@ -29,5 +29,5 @@ class Exponential_moving_average(Abstract_strategy):
 		self.val = helper(1)
 
 		# Print calculated value 
-		self.to_string()
+		print(self)
 

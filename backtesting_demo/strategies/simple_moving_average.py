@@ -17,5 +17,5 @@ class Simple_moving_average(Abstract_strategy):
 		self.val = sum(closing_prices) / self.days
 
 		# Print calculated value 
-		self.to_string()
+		print(self)
 
